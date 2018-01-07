@@ -1,0 +1,150 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html {
+ 	background-position: top center;
+ 	background-color: #ffffe6;
+ }
+
+ body {
+ 	overflow: hidden;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ header {
+ 	position: absolute;
+ 	height: 1000px;
+ 	width: 300px;
+ 	background-color: #113255;
+ 	overflow: hidden;
+ 	z-index: 1100;
+ 	margin: 0;
+ 	padding: 0;
+  }
+
+  ul {
+  	list-style-type: none;
+  	padding-top: 25%;
+  }
+
+  li {
+  	padding-bottom: 7%;
+  }
+
+ .content {
+ 	padding-top: 20%;
+ 	padding-left: 50%;
+ }
+
+ .scrollDots {
+ 	padding-left: 25%;
+ 	padding-top: 25%;
+ }
+
+.logo {
+	position: relative;
+	padding-top: 25%;
+	padding-left: 15%;
+}
+
+.headerButton {
+	font-size: 130%;
+	font-family: futura;
+	text-decoration: none;
+	color: #f2f2f2;
+	display: inline;
+	margin: 27%;
+}
+
+.headerButton:hover {
+	font-size: 130%;
+	font-family: futura;
+	text-decoration: none;
+	color: #C0C0C0;
+}
+
+.picTitle {
+  color: #f2f2f2;
+  font-size: 250%;
+  padding-top: 9%;
+  padding-left: 35%;
+  position: absolute;
+  top: 0;
+  z-index: 1500;
+  font-family: verdana;
+}
+
+.picText {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding-top: 21%;
+  padding-left: 37%;
+  position: absolute;
+  top: 0;
+  z-index: 1500;
+  font-family: futura;
+}
+
+/* Slideshow container */
+slideshow-container {
+  margin-left: 300px;
+  background-position: top center;
+  height: 1000px;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0px;
+  background-color: #717171;/*#bbb;*/
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  z-index: 1000;
+}
+
+.active, .dot:hover {
+  background-color: #113255;/*#717171*/
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

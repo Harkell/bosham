@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bosham Capital</title>
+    <%= csrf_meta_tags %>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+   	<div class="logo"><%= link_to image_tag("bca_logo_blue3.png"), root_path %></div>
+   	<ul>
+   		<li><%= link_to "Home", root_path, :class => "headerButton" %></li>
+   		<li><%= link_to "About", home_about_path, :class => "headerButton" %></li>
+   		<li><%= link_to "Team", home_team_path, :class => "headerButton"  %></li>
+   		<li><%= link_to "Portfolio", home_about_path, :class => "headerButton"  %></li>
+   		<li><%= link_to "Contact", home_team_path, :class => "headerButton"  %></li>
+   	</ul>
+  </header>
+  <body>
+    <%= yield %>
+  </body>
+</html>
