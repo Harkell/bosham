@@ -42,7 +42,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-history.navigationMode = 'compatible';
-$(document).ready( function(){
-    alert('test');
-});
+function myFunction() {
+    var x = document.getElementById("hidden");
+    if (x.style.display == "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

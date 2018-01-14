@@ -16,7 +16,7 @@
 
  html {
  	background-position: top center;
- 	background-color: #ffffe6;
+ 	background-color: #0d2540;
  }
 
  body {
@@ -25,10 +25,34 @@
  	padding: 0;
  }
 
+ p {
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    color: #C0C0C0;
+    font-family: Helvetica;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	color: #C0C0C0;
+ 	font-family: Helvetica;
+ 	font-size: 150%;
+ }
+
+ div.contentbox {
+ 	margin-left: -50%;
+    margin-right: 50%;
+    margin-top: -23%;
+    width: 130%;
+    background-color: #113255;
+    padding: 5%;
+ }
+
  header {
  	position: absolute;
- 	height: 1000px;
- 	width: 300px;
+ 	height: 100%;
+ 	width: 20.75%;
  	background-color: #113255;
  	overflow: hidden;
  	z-index: 1100;
@@ -38,11 +62,17 @@
 
   ul {
   	list-style-type: none;
-  	padding-top: 25%;
+  	margin-top: 10%;
+  	margin-right: 15%;
   }
 
   li {
-  	padding-bottom: 7%;
+  	padding-top: 3%;
+  	padding-bottom: 3%;
+  	text-align: center;
+  	border-width: 1px;
+  	border-style: ridge;
+  	border-color: #C0C0C0;
   }
 
  .content {
@@ -57,12 +87,13 @@
 
 .logo {
 	position: relative;
-	padding-top: 25%;
+	padding-top: 35%;
 	padding-left: 15%;
+	padding-bottom: 39%;
 }
 
 .headerButton {
-	font-size: 130%;
+	font-size: 100%;
 	font-family: futura;
 	text-decoration: none;
 	color: #f2f2f2;
@@ -71,21 +102,46 @@
 }
 
 .headerButton:hover {
-	font-size: 130%;
 	font-family: futura;
 	text-decoration: none;
 	color: #C0C0C0;
 }
 
+.header3Drop {
+	font-size: 300%;
+	font-family: futura;
+	text-decoration: none;
+	padding-left: 12%;
+	text-align: center;
+	color: #f2f2f2;
+	display: inline;
+	margin: 30%;
+	cursor: pointer;
+	/* Below makes it unselectable */
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.header3Drop:hover {
+	color: #C0C0C0;
+}
+
+.hidden {
+	display: none;
+}
+
 .picTitle {
   color: #f2f2f2;
-  font-size: 250%;
+  font-size: 300%;
   padding-top: 9%;
   padding-left: 35%;
   position: absolute;
   top: 0;
   z-index: 1500;
-  font-family: verdana;
+  font-family: Helvetica;
+  font-weight: bold;
 }
 
 .picText {
@@ -101,9 +157,9 @@
 
 /* Slideshow container */
 slideshow-container {
-  margin-left: 300px;
+  margin-left: 100%;
   background-position: top center;
-  height: 1000px;
+  height: 100%;
   overflow: hidden;
 }
 
